@@ -18,7 +18,7 @@ This repository is designed to be used with the R Studio program for teaching. R
 
 It is highly recommended that learners use R Studio for the best experience in understanding and practicing R.
 
-However, for temporary and mandatory purposes (such as an unwanted academic unit), you can use "https://colab.research.google.com/".
+However, for temporary and mandatory purposes (such as an unwanted academic unit), you can use https://colab.research.google.com/.
 
 
 
