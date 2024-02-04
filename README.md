@@ -30,7 +30,7 @@ However, for temporary and mandatory purposes (such as an unwanted academic unit
     ```    
 2. Explore the `Scripts` folder for the step-by-step guides in R.
 
-3. Check the `Completed Versions` folder(named DONE in here) to compare your answers and learn from the solutions provided.
+3. Check the Completed Versions folder(named `DONE` ) to compare your answers and learn from the solutions provided.
 
 
 
