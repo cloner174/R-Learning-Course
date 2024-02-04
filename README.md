@@ -41,12 +41,10 @@ To err is human, and nobody likes a perfect person! If you come across any mista
 
 
 ## License
-This project is licensed under the [Apache License 2.0](LICENSE). You are free to:
-- Use, modify, and distribute the content.
-- Use the work for commercial purposes.
-- Allow your modifications to be under this same license.
+This project is licensed under the [Apache License, Version 2.0](LICENSE).
 
-Please review the [LICENSE](LICENSE) file for the full license text.
+For detailed information, please refer to the [full text of the Apache License](https://github.com/cloner174/R_Learning_Course/blob/main/LICENSE).
+
 
 
 
