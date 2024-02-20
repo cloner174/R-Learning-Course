@@ -19,13 +19,11 @@
 ## 7. Write organized scripts
 
 
-
 ## Using this script:
 
 ## 1. The symbol '#' denotes comments. 
 ##    If in the same line as a command, these comments describe what the command executes.
 ## 2. All sections labeled 'PRACTICE' are meant to be completed on your own. They will be graded by the point value next to each item. 
-
 
 
 # # WHAT IS A SCRIPT? # #
@@ -35,14 +33,12 @@
 # R doesn't see them as code and won't run them, which is helpful for writing instructions/answers in your file
 
 
-
 ## INSTALLING PACKAGES:
 
 # First we have to install and load a package. This might take a moment:
 
 install.packages('ggplot2') # NOTE: Once you've installed it, you can comment out or delete this line!
 library(ggplot2) # This loads the package into your "environment" so you can use it!
-
 
 
 ## GETTING STARTED ## 
@@ -77,7 +73,6 @@ library(ggplot2) # This loads the package into your "environment" so you can use
 # You can also highlight a section of code to run multiple lines at once using the shortcut or button
 
 
-
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 ##                                   1. R Basics ## 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -91,7 +86,6 @@ library(ggplot2) # This loads the package into your "environment" so you can use
 4 + 5 #execute this command from the Source Script (i.e. here) with the keyboard shortcut
 
 
-
 # Functions: R can execute pre-defined functions (arguments in parentheses) that return a value
 
 sum(4, 5) # The sum() function sums numbers
@@ -99,20 +93,15 @@ sum(4, 5) # The sum() function sums numbers
 print('I am a new R user and this is my first text output!') # print() "prints" text
 
 # In the console, the 'up' arrow retrieves last command you ran. Use that to rerun the 4+5 command from earlier
-
 # Use 'Tab' to autocomplete the commands and object names in R. 
 # E.g. As you start to the type "sum", if you type "su" and then press tab, 
 # it will suggest possible things you're trying to type (including "sum")
-
 # The 'up' arrow and 'Tab' are probably your best friends with RStudio.
-
 # Common mistake: unfinished command! In the console, '+' indicates an unfinished command 
 # It won't let you run anything else while there's a '+'. Press 'Esc' on your keyboard to get out of this
-
 # Not sure what a function does? Ask R by adding '?' before the command and run it:
 
 ?sum
-
 
 
 # # OTHER OPERATORS AND FUNCTIONS # # 
@@ -124,8 +113,6 @@ print('I am a new R user and this is my first text output!') # print() "prints" 
 12 / 6 # Divide
 
 2 ^ 4 # 2 to the 4th power
-
-
 
 # # Using functions # #
 
@@ -154,15 +141,12 @@ seq(0, 20, 4) #sequence function: from, to, by
 #__________________________________________________________________________________________________________________________________#
 #>>>>>>>>>>>>>>>>> PRACTICE 1
 # # PRACTICE 1.1:  Write 3 calculations with operators
-
 #solve:
 12*5-8/2;
 2^10-2;
 50/2-25/2+5;
 #
-
 ## PRACTICE 1.2:  write 3 calcualtions with functions 
-#
 #____________________________________________________________________________________________________________________________________#
 
 
@@ -173,9 +157,7 @@ seq(0, 20, 4) #sequence function: from, to, by
 # # OBJECTS # # ------------------------------------------------------------------------------------
 
 # Object: data structure with attributes of a certain class 
-
 # Assigment operator ('<-' or '='): assigns objects on the right to objects on left
-
 # Resulting objects stored in R's memory (the 'Environment')
 
 # Create two objects: 
@@ -207,17 +189,12 @@ A
 B
 
 
-
 #__________________________________________________________________________________________________________________________________#
 
 # # >>>>>>>>>>>> PRACTICE 2 <<<<<<<<<<<<< **************************************************************************************
-
 # # PRACTICE 2.1: Change object a from above to a different number, then re-add to b. Describe what happens to your object preceeded by #
-
 # # PRACTICE 2.2: Create a new object called "c" with the sum of a and b 
-
 #__________________________________________________________________________________________________________________________________#
-
 
 
 # # VECTORS # # ------------------------------------------------------------------------------------
@@ -242,7 +219,6 @@ sum(myvector)
 myvectorAB <- c(a, b) 
 
 # Can also create vector with text data:
-
 # To create a text or "character" object, we put quotation marks around words.
 y <- 'bonjour' 
 
@@ -250,18 +226,13 @@ y <- 'bonjour'
 d <- c('ciao', 'gruezi') #still need to use c() to combine elements
 
 
-
 #___________________________________________________________________________________________________________________________#
-
 # # PRACTICE 3 *****************************************************************************************PRACTICE 3 
-
 # PRACTICE 3.1: Create a vector called mytextvector that has both y and d 
-#
-#
-# PRACTICE 3.2:Create a vector with 5 numbers and find their sum using the sum() command 
-#
-#__________________________________________________________________________________________________________________________________#
 
+# PRACTICE 3.2:Create a vector with 5 numbers and find their sum using the sum() command 
+
+#__________________________________________________________________________________________________________________________________#
 
 
 # # DATAFRAMES # # ---------------------------------------------------------------------------------
@@ -276,20 +247,16 @@ data(mtcars)
 head(mtcars) #first six rows of DF
 
 # # --> In a data frame, the rows represent recorded observations (rows) for specific variables (columns)
-
 # Now open mtcars from the Environment Pane (top-right) to see the full dataframe. 
 # Click on the blue arrow next to mtcars in the Environment tab (upper right corner)
-
 # You can load data into dataframes from R packages, data files from the internet, or from scratch
 # using data you type into R code
-
 # We can use the dim() function to get the dimensions of the dataset in terms of number of rows and 
 # number of columns:
 
 dim(mtcars)
 
 #We can see that the dataset has 32 rows and 11 columns.
-
 #We can also use the names() function to display the column names of the data frame:
 
 names(mtcars)
@@ -312,34 +279,24 @@ mtcars$hp # hp column
 mtcars$mpg[5] # Get the mpg for the 5th car (a Hornet Sportabout in this case)
 
 
-
 #__________________________________________________________________________________________________________________________________#
-
-# # PRACTICE 4 *****************************************************************************************PRACTICE 4
-
+# # PRACTICE 4 *****************************************************************************************PRACTICE 
 # PRACTICE 4.1 : What is the horsepower (column name: hp) of the car in the 10th row =
-#?
-#?
+#
 #__________________________________________________________________________________________________________________________________#
-
 
 
 # You can create a smaller dataframeor subset of the larger one using indexing:
 (fewer_cars <- mtcars[1:5,]) # this is a new with only the first 5 rows
 
 #Note: when you place the command in paraentheses, R will print the result in the console
-
 # Note that "x:y" in R denotes the number x through y (in this case 1 through 5)
 
 
-
-#__________________________________________________________________________________________________________________________________#
-
+#_________________________________________________________________________________________________________________________________#
 # # PRACTICE 5 *****************************************************************************************PRACTICE 5 
 # PRACTICE 5.1 : Create a smaller data frame named fewer_cars2 from mtcars with all rows 1 through 10 and columns 1 through 5
-#
 #__________________________________________________________________________________________________________________________________#
-
 
 
 # # DATAFRAMES: Adding New Data # # -----------------------------------------------------------------
@@ -349,36 +306,29 @@ mtcars$mpg[5] # Get the mpg for the 5th car (a Hornet Sportabout in this case)
 fewer_cars$rating <- c(3.5, 4, 4.5 ,2) # Personal ratings for the cars
 
 # ERROR: what happened? Error because = ((( replacement has 4 rows, data has 5 )))
-
 # Now, add a vector as dd$clothes that works
 fewer_cars$rating <- c(3.5, 4, 4.5 ,2, 2) # Personal ratings for the cars
 
 # We could have checked the length of our new vector with the length function
 
 length (fewer_cars$rating)
-
 dim(fewer_cars)
 
 #The length of the vector must be equal to the number of rows in order to add the vector as a new column in the dataframe. 
 
 # II. First create a vector, then add it as new column
-
 # Is the car a Mazda?
 
 mazda_car <- c("Y", "Y", "N", "N", "N") 
 
 fewer_cars$mazda <- mazda_car
 
-
 #__________________________________________________________________________________________________________________________________#
-
 # # PRACTICE 6 *****************************************************************************************PRACTICE 6 
 # PRACTICE 6.1 : Now, look at fewer_cars. What changed? Write code to explore the new column names 
 #
 # PRACTICE 6.1 :Write code to explore new dimensions of the data frame.
-# 
 #__________________________________________________________________________________________________________________________________#
-
 
 # DELETING DATA FROM A DF # 
 
@@ -389,8 +339,6 @@ fewer_cars$mazda <- mazda_car
 fewer_cars_shorter <- fewer_cars[-5,] #delete 5th row from mydf
 
 fewer_cars_less_variables <- fewer_cars[,-3] #delete 3rd column from mydf
-
-
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # #                               3. EXPLORE DATAFRAME WITH BASIC FUNCTIONS # # 
@@ -407,7 +355,6 @@ ncol(fewer_cars) #number of columns = ?
 
 #__________________________________________________________________________________________________________________________________#
 
-
 # Dataframe Data Types
 # str gives the structure of an object
 str(fewer_cars) #columns can be "numeric", "factors", or "characters" (or other things too)
@@ -417,7 +364,6 @@ str(fewer_cars) #columns can be "numeric", "factors", or "characters" (or other 
 # Numerical: numerical values (continuous, discrete, integers, etc.)
 
 is.numeric(fewer_cars$mpg) #numeric? =  TRUE
-
 is.numeric(fewer_cars$mazda) #numeric? = FALSE
 
 
@@ -433,14 +379,11 @@ is.character(fewer_cars$mazda) #character? = FALSE
 is.factor(fewer_cars$mazda) #character? =  TRUE
 levels(fewer_cars$mazda) #The categories in our factor variable
 
-
 #__________________________________________________________________________________________________________________________________#
 # # PRACTICE 7 *****************************************************************************************PRACTICE 7
-
 # Practice 7.1 Check the structure of the fewer_cars dataframe
 #
 #__________________________________________________________________________________________________________________________________#
-
 
 # # 4. CHECK DATA WITH BASIC FUNCTIONS # # 
 
@@ -477,19 +420,15 @@ max(mycars$mpg)
 # Data minimum
 min(mycars$mpg)
 
-
 #__________________________________________________________________________________________________________________________________#
-
 # # PRACTICE 8 *****************************************************************************************PRACTICE 8 
-
 # Practice 8.1 Find the minimum value for horsepower (hp) in the fewer_cars dataframe using the summary function and the min function
-
 ## Practice 8.2 Find the maximum value for horsepower (hp)in the fewer_cars dataframe using the summary function and the max function
 #
 #__________________________________________________________________________________________________________________________________#
 
-
 # Data  range (The difference between the lowest and highest values.)
+
 range(mycars$mpg)
 
 # Data Interquartile range (The interquartile range of these values is a range where 25% on either side is cut off. 
@@ -502,20 +441,14 @@ sd(mycars$mpg)
 # Unique entries
 
 unique(mycars$cyl) #lists all unique entries
-
 length(unique(mycars$cyl)) #number of unique entries. Notice how we're nesting two functions!
 
 #__________________________________________________________________________________________________________________________________#
-
 # # PRACTICE 9 *****************************************************************************************PRACTICE 9
-
 # Practice 9.1 Using code, what are the unique elements of the column gears in the fewer_cars dataframe?
 #
-
 ## Practice 9.2 Using code, how many unique elements ar there in the column gears in the fewer_cars dataframe?
-#
 #__________________________________________________________________________________________________________________________________#
-
 
 # Sort data
 
@@ -524,9 +457,7 @@ sort(mycars$cyl) #sorts column by increasing numeric order
 (mycars_rev <- mycars[order(mycars$mpg),]) #orders the entire mycars from low to high mpg 
 
 #note: see how the function can be placed in the place for rows and calling a column.
-
 # IMPORTANT: Find the record with the maximum weight
-
 # The which() function in R returns the position or the index of the value which satisfies the given condition. 
 # The Which() function in R gives you the position of the value in a logical vector. 
 # The position can be of anything like rows, columns and even vector as well.
@@ -535,16 +466,11 @@ which.max(mycars$wt) # which.max finds which row the maximum value is in!
 
 mycars[which.max(mycars$wt),] # By combining it with indexing, we can find which car it is!
 
-
 #__________________________________________________________________________________________________________________________________#
-
 # # PRACTICE 10 *****************************************************************************************PRACTICE 10 
-
 # Practice 10.1:  Using code, find the minimum value of the mycars drat column
-#
-#
-# Practice 10.2:  Using code, which record has the minimum value of the mycars drat column
 
+# Practice 10.2:  Using code, which record has the minimum value of the mycars drat column
 #__________________________________________________________________________________________________________________________________#
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -566,12 +492,10 @@ mycars$mpg_missing[10:15] <- NA #insert NA values
 mean(mycars$mpg_missing) 
 
 # R Can't do math with NA values!!!
-
 # But we can use a special "argument" in most commands to get by this:
 mean(mycars$mpg_missing, na.rm = TRUE) #tell R to remove 'NA' values for purposes of calculation
 # In this case, we're adding a comma and then the name of an option "na.rm". 
 # By setting that to TRUE, we're telling R to ignore NAs!
-  
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 ##                                            6. Basic Plots and Graphics # # 
@@ -592,25 +516,17 @@ library("ggplot2")
 ggplot(mycars, aes(x=wt, y=mpg)) + geom_point()
 # aes() describes what variables we're using. It is short for aesthetics. 
 # In this case, wt is the x variable and mpg is the y variable
-
-
 # change color by adding an option to geom_point!
 ggplot(mycars, aes(x=wt, y=mpg)) + geom_point(col='red')
-
-
 # draw a line showing how mpg varies over the rows of the dataframe
 ggplot(mycars, aes(x=1:length(mycars$mpg),y=mpg)) + geom_line()
 # In this case, our x variable is the row number 
 # (from 1 to the total number of observations which we get using length())
 
 #__________________________________________________________________________________________________________________________________#
-
 # # PRACTICE 11 *****************************************************************************************PRACTICE 11
-
 # Practice 11.1:  Describe the relationship between mpg and wt.
-#
 #__________________________________________________________________________________________________________________________________#
-
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # #                                         7. SAVE / EXPORT DATA # # 
@@ -619,9 +535,7 @@ ggplot(mycars, aes(x=1:length(mycars$mpg),y=mpg)) + geom_line()
 # # WORKING DIRECTORY # # --------------------------------------------------------------------------
 
 # Set a directory to prevent re-typing path every time
-
 # Use 'tab' key for options after each '/'
-
 # '~/' represents the home directory. 
 
 setwd('~/Desktop/') #for Windows Users, it is your desktop
@@ -642,8 +556,6 @@ write.csv(mycars, file='mycars.csv') #or export DF as .CSV file
 
 # Try to find this file in your computer! It should be wherever you set your working directory
 # above (could be your home, your desktop, or your documents, or somewhere else if you customized it!)
-
-
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # #                                   8. READ IN DATA # # 
@@ -682,7 +594,6 @@ data_C <- read.csv('./mycars.csv')
 # Save scripts in one place (e.g. 'project_name_YEAR/scripts/first_script.R')
 
 #* # *#* # # *# # *# # *# # *# # # #* # # # # # #* # *# # # # # *# *# # # # #* # # *# # # #* # # # #* # # # *# # #* # 
-
 
 # Email:  cloner174.org@gmail.com
 #cloner174#https://github.com/cloner174/R_Learning_Course####
